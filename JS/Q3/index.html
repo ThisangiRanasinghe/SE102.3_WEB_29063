@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color</title>
+    <style>
+        button {
+          padding: 10px 20px;
+          font-size: 16px;
+          cursor: pointer;
+        }
+      </style>
+</head>
+<body>
+    <h1>Move your mouse over the buttons to change the background color</h1>
+    <button id="redButton">Red</button>
+    <button id="greenButton">Green</button>
+    <button id="blueButton">Blue</button>
+  
+    <script>
+      const redButton = document.getElementById("redButton");
+      const greenButton = document.getElementById("greenButton");
+      const blueButton = document.getElementById("blueButton");
+  
+      function changeBackgroundColor(color) {
+        document.body.style.backgroundColor = color;
+      }
+  
+      redButton.addEventListener("mouseover", () => {
+        changeBackgroundColor("red");
+      });
+  
+      redButton.addEventListener("mouseout", () => {
+        changeBackgroundColor("white");
+      });
+  
+      greenButton.addEventListener("mouseover", () => {
+        changeBackgroundColor("green");
+      });
+  
+      greenButton.addEventListener("mouseout", () => {
+        changeBackgroundColor("white");
+      });
+  
+      blueButton.addEventListener("mouseover", () => {
+        changeBackgroundColor("blue");
+      });
+  
+      blueButton.addEventListener("mouseout", () => {
+        changeBackgroundColor("white");
+      });
+    </script>
+</body>
+</html>
+ 
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Marks</title>
+</head>
+<body>
+    <h1>Enter 5 Marks</h1>
+    <form id="marksForm">
+      <label for="mark1">Mark 1:</label>
+      <input type="number" id="mark1" required><br>
+  
+      <label for="mark2">Mark 2:</label>
+      <input type="number" id="mark2" required><br>
+  
+      <label for="mark3">Mark 3:</label>
+      <input type="number" id="mark3" required><br>
+  
+      <label for="mark4">Mark 4:</label>
+      <input type="number" id="mark4" required><br>
+  
+      <label for="mark5">Mark 5:</label>
+      <input type="number" id="mark5" required><br>
+  
+      <button type="button" onclick="calculateMarks()">Calculate Grades</button>
+    </form>
+  
+    <script>
+      function calculateMarks() {
+        // Get the input values
+        const mark1 = parseFloat(document.getElementById("mark1").value);
+        const mark2 = parseFloat(document.getElementById("mark2").value);
+        const mark3 = parseFloat(document.getElementById("mark3").value);
+        const mark4 = parseFloat(document.getElementById("mark4").value);
+        const mark5 = parseFloat(document.getElementById("mark5").value);
+  
+        // Calculate total and average
+        const total = mark1 + mark2 + mark3 + mark4 + mark5;
+        const average = total / 5;
+  
+        // Display the output
+        alert(`Total Marks: ${total}\nAverage: ${average.toFixed(2)}`);
+  
+        // Check if average is greater than 30 and display appropriate alert
+        if (average > 30) {
+          alert("Congrats! You passed.");
+        } else {
+          alert("Better luck next time.");
+        }
+      }
+    </script> 
+</body>
+</html>
+
