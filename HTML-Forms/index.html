@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration From </title>
+    </head>
+    <body>
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required><br>
+
+        <label for="mobileNumber">Mobile Number:</label>
+        <input type="tel" id="mobileNumber" name="mobileNumber" pattern="[0-9]{10}" required><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="favouriteMusic">Favourite Music:</label>
+        <input type="text" id="favouriteMusic" name="favouriteMusic" required><br>
+
+        <label for="additionalDetails">Additional Details:</label>
+        <textarea id="additionalDetails" name="additionalDetails" rows="4" cols="50"></textarea><br>
+
+        <input type="checkbox" id="termsAndConditions" required>
+        <label for="termsAndConditions">I am agree to the terms and conditions</label><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+
+</html>

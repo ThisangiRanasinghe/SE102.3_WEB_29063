@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Registration Form</title>
+</head>
+
+<body>
+    <h2>Car Registration Form</h2>
+    <form action="#" method="post">
+
+        <label for="ownerName">Owner Name:</label>
+        <input type="text" id="ownerName" name="ownerName" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required><br>
+
+        <label for="country">Select Country:</label>
+        <select id="country" name="country" required>
+            <option value="" disabled selected>Select a country</option>
+            <option value="SriLanka">SriLanka</option>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="UK">UK</option>
+            
+        </select><br>
+
+        <label for="carModel">Car Model:</label>
+        <input type="text" id="carModel" name="carModel" required><br>
+
+        <label>Transmission:</label>
+        <input type="radio" id="manual" name="transmission" value="Manual" required>
+        <label for="manual">Manual</label>
+        <input type="radio" id="auto" name="transmission" value="Auto">
+        <label for="auto">Auto</label><br>
+
+        <label for="otherDetails">Other Details:</label>
+        <textarea id="otherDetails" name="otherDetails" rows="4" cols="50"></textarea><br>
+
+        <input type="checkbox" id="termsAndConditions" required>
+        <label for="termsAndConditions">I am agree to the terms and conditions</label><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+
+</html>
