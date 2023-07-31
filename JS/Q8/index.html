@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extract Year of Birth from NIC</title>
+</head>
+<body>
+<script>
+  function extractYearOfBirthFromNIC(nicNumber) {
+     
+    const birthYearDigits = nicNumber.substring(0, 2);
+    
+     
+    const birthYear = parseInt(birthYearDigits);
+
+    return birthYear;
+  }
+
+  // Get the student's NIC number from the prompt box
+  const studentNIC = prompt("Enter student's NIC number:");
+
+  const yearOfBirth = extractYearOfBirthFromNIC(studentNIC);
+
+  // Display the year of birth
+  if (!isNaN(yearOfBirth)) {
+    alert(`Year of Birth: ${yearOfBirth}`);
+  } else {
+    alert("Invalid NIC number or format!");
+  }
+</script>
+
+</body>
+</html>
