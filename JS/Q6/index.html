@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<button id="googleButton">Google</button>
+
+<script>
+  
+  const googleButton = document.getElementById('googleButton');
+
+
+  googleButton.addEventListener('click', function() {
+   
+    const confirmResult = confirm('Do you want to visit Google?');
+
+   
+    if (confirmResult === true) {
+      
+      window.location.href = 'https://www.google.com';
+    } else {
+     
+      alert("You decided to stay.");
+    }
+  });
+</script>
+
+</body>
+</html>
