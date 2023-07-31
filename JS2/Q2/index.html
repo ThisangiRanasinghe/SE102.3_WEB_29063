@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enable/Disable Embedded Video</title>
+</head>
+<body>
+    <video id="videoPlayer" width="640" height="360" controls>
+  <source src="video_url" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<script>
+ 
+  const videoElement = document.getElementById('videoPlayer');
+
+ 
+  function playVideoOnMouseOver() {
+    videoElement.play();
+  }
+
+  
+  function pauseVideoOnMouseOut() {
+    videoElement.pause();
+  }
+
+  videoElement.addEventListener('mouseover', playVideoOnMouseOver);
+  videoElement.addEventListener('mouseout', pauseVideoOnMouseOut);
+</script>
+
+</body>
+</html>
